@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>House Okami</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
+        <link rel="stylesheet" href="styles.css" type="text/css"> 
+        <!-- Font Awesome Icons -->
+        <script src="https://kit.fontawesome.com/ab5ed30506.js"></script>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+        <style>
+           
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <header>
+                <div id="title-text">
+                    <h1>House Ōkami</h1>
+                    <a href="javascript:void(0);" class="iconfa" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+                </div>
+                <nav>
+                    <ul class="topnav, hidden" id="myTopnav">
+                        <li class="nav-item"><a href="#about-okami" onclick="myFunction()">About</a></li>
+                        <li class="nav-item"><a href="#roles" onclick="myFunction()">Roles</a></li>
+                        <li class="nav-item"><a href="#camping" onclick="myFunction()">SCA</a></li>
+                        <li class="nav-item"><a href="#martial" onclick="myFunction()">Warrior Arts</a></li>
+                        <li class="nav-item"><a href="#peaceful-arts" onclick="myFunction()">Peaceful Arts</a></li>
+                        <li class="nav-item"><a href="#coming-events" onclick="myFunction()">Calendar</a></li>
+                    </ul>
+                </nav>
+            </header>
+            
+            <main>
+                <section id="hero" alt="House Okami Group Picture"></section>
+                <section id="about-okami" class="collapsible">
+                    <img src="images/PER01_Toki.jpg" alt="Portrait of Toki, head of Okami">
+                    <div class="heading"><h3>ABOUT ŌKAMI</h3></div>
+                    <div class="content">    
+                        <p>Ōkami is a Household in the <span class="sca-link"><a href="https://www.sca.org" target="_blank">Society for Creative Anachronism</a></span> (SCA) dedicated to researching and recreating the life of medieval Japan. We get together to share ideas and knowledge, socialize, learn about Japanese language and culture, practice our skills and have a great time! We are part of the SCA Kingdom of Ealdormere (Ontario, Canada).</p>
+                    </div>
+                </section>
+                <section id="roles" class="collapsible">
+                    <img src="images/PER03_Sylvia.jpg" alt="Portrait of Ming">
+                    <div class="heading swap"><h3>ROLES IN ŌKAMI</h3></div>
+                    <div class="content">
+                        <p>In Ōkami you you can explore your inner Samurai, be a Sohei (warrior monk) or a Onna-bugeisha (warrior woman). You can portray the splendour of the Imperial Court through art, fashion and poetry. You can be an artisan and learn to make your own armour, traditional clothing or other crafts. You can portray any occupation that would have existed in Medieval Japan!</p>
+                    </div>
+                </section>
+                <section id="camping">
+                    <img src="images/murder_procession.jpg" alt="Okami processing in full armour with flags">
+                    <div><h3>SCA EVENTS AND GATHERINGS</h3></div>
+                    <div class="content">
+                        <p>In addition to our own get-togethers, we attend day events and longer camping events in the <span class="sca-link" title="SCA Website" ><a href="https://www.sca.org" target="_blank">SCA</a></span>. At these events we field our own team of armoured samurai warriors, fighting in tournaments, melee teams and even battles with hundreds of participants. Our fighting is done in full armour with rattan weapons and with strict safety measures in place.
+                        At camping events we try to recreate a historical Japanese war camp, with period tents, banners and jinmaku curtains to wall off our encampment. At these events you can really immerse yourself in history!
+                        </p>
+                    </div>
+                </section>
+                <section id="martial" class="collapsible">
+                    <img src="images/PER06_Masako.jpg" alt="Portrait of Masako">
+                    <div><h3>WARRIOR ARTS</h3></div>
+                    <div class="content">
+                        <p>In addition to fully armoured combat, members of Ōkami also take part in other forms of martial activities. Some compete in SCA Fencing, bringing honour and glory to Ōkami. Others specialize in Archery, whether shooting at targets for points, or joining their comrades in full armour on the battlefield. There are even thrown weapon competitions and siege machines used in war.</p>
+                    </div>
+                </section>
+                <section id="peaceful-arts" class="collapsible">
+                    <img src="images/PER02_Ishigane.jpg" alt="Portrait of Ishigane">
+                    <div class="heading swap"><h3>PEACEFUL ARTS</h3></div>
+                    <div class="content">
+                        <p>Other activities include garment making, kumihimo (braid making), calligraphy, musical performance, story-telling, poetry, armour making, metal working, making musical instruments, gaming and sake brewing. Soon we will be adding taiko drum making and playing. In Ōkami you can explore many traditional arts and pastimes.</p>
+                    </div>
+                </section>
+                <section id="coming-events">
+                    <h3>COMING SOON</h3>
+                    <div id="next"></div>
+            <!-- Data from Google Sheet put here by Tabletop.js -->
+                </section>
+            </main>
+            <footer>
+                <ul>
+                    <li><a href="https://facebook.com/groups/okamisca/"><i class="fab fa-facebook-square" title="Okami on Facebook"></i></a></li>
+                    <li><a href="https://www.instagram.com/okamisca/"><i class="fab fa-instagram" title="Okami on Instagram"></i></a></li>
+                    <li><a href="mailto:okamisca@gmail.com" ><i class="far fa-envelope" title="Email us!"></i></a></li>
+                    <li><a href="https://www.sca.org"><i class="icon-sca" title="SCA Website"></i></a>
+                    </li>
+                </ul>
+            </footer>
+            
+            <!-- Tabletop.js -->
+            <script src='https://cdnjs.cloudflare.com/ajax/libs/tabletop.js/1.5.1/tabletop.min.js'></script>
+            <script type=text/javascript>
+                var public_spreadsheet_url = 'https://docs.google.com/spreadsheets/d/19cUcNOKaBB0XFUZIxH97g5JkrDQ0PYkubSeNFAGMs78/edit?usp=sharing';
+                function init() {
+                    Tabletop.init( { key: public_spreadsheet_url, callback: showInfo, simpleSheet: true } );
+                }
+                
+                window.addEventListener('DOMContentLoaded', init)
+                
+               function showInfo(data) {      
+                    if (data.length>0) {
+                    document.getElementById("next").innerHTML = '<h3>' + data[0].Title + '</h3>' +
+                                            '<p>' + data[0].Date + '<br>' +
+                                            'at ' + data[0].Location + '<br>' +
+                                            data[0].Address + '<br>' +
+                                            '<p>' + data[0].Description;
+                    console.log(data);
+                    }
+                    else {
+                    document.getElementById("coming-events").innerHTML = '<h3>CHECK BACK FOR UPCOMING EVENTS</h3>';
+                    console.log(data);
+                    }
+                }
+            </script>
+            
+        </div>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav").classList.toggle('hidden');
+            }
+                
+</script>
+    </body>
+</html>
